@@ -49,4 +49,14 @@ const errorMessage = computed(() => error.value?.data.message);
 const onFormSubmit = () => {
   refresh();
 };
+
+useHead({
+  title: "Weather App",
+  meta: [
+    {
+      name: "description",
+      content: "A simple weather app built with Vue 3 and Vite",
+    },
+  ],
+});
 </script>
